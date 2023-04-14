@@ -1,4 +1,4 @@
-# L2---Projet_Web_Client
+# L2 // Projet Web (Client)
 Portfolio Website ( Second year project )
 
 This project is a virtual portfolio created entirely with HTML, CSS and JavaScript. 
