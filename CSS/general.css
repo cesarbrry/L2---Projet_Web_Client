@@ -1,0 +1,811 @@
+/* ------------------------------- POLICE ------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+/* ------------------------------- RESET ------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------- ARTICLE ------------------------------ */
+
+.grostitre
+{
+    font-family: 'Libre Barcode 39 Text';
+    color: black ;
+    text-align: center;
+    font-size: 4em;
+}
+
+.titre
+{
+    font-family: 'Bayon';  
+    color: black ;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+article
+{
+    font-family: 'Fira Mono';
+    color: black ;
+    text-align: center;
+    margin: 30px;
+}
+
+/* -------------------------------- IMAGES ------------------------------ */
+
+.image
+{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    border-radius: 50px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.imagepetite
+{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 800px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+}
+
+.icone
+{
+    width: 60px;
+    padding: 4px;
+    flex-direction: row;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    
+}
+
+.icone:hover
+{
+    filter: opacity(0.3);
+}
+
+figure
+{
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ------------------------------ FORMULAIRE ---------------------------- */
+
+.formulaire
+{
+    color: black;
+    transition: 0.5s;
+    align-items: center;
+}
+
+
+label
+{
+    font-family: 'Bayon';
+    color: black ;
+    text-align: center;
+    font-size: large;
+}
+
+::placeholder
+{
+    color: grey;
+    font-family: 'Fira Mono';
+    font-size: medium;
+}
+
+input
+{
+    background-color: black;
+    color: white;
+    width: 80%;
+    height:50px;
+    border-radius: 5px;
+    font-family: 'Fira Mono';
+    border: 0px;
+    font-size: medium;
+}
+
+textarea
+{
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 100px;
+    border-radius: 5px;
+    font-family: 'Fira Mono';
+    border: 0px;
+    font-size: medium;
+}
+
+/* -------------------------------- AUTRES ------------------------------ */
+
+
+ul
+{
+    list-style: none;
+}
+
+button
+{
+background-color: rgb(255, 255, 255);
+font-family: 'Bayon';
+border: 100px;
+border-color: white;
+color: black;
+width: 80%;
+height: 50px;
+font-size: medium;
+transition: 0.5s;
+border-radius: 5px;
+}
+
+button:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Bayon';
+    border-radius: 5px;
+}
+
+.lientexte
+{
+    color: black;
+    transition : 0.3s;
+    font-weight: bold;
+}
+
+.lientexte:hover
+{
+    color: blueviolet;
+}
+
+.lientitre
+{
+    color: black;
+    transition : 0.3s;
+    font-family: 'Bayon';  
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+
+.lientitre:hover
+{
+    color: grey;
+}
+
+.retourhautpage
+{
+    color: black;
+    transition : 0.3s;
+    font-family: 'Bayon';  
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+
+.retourhautpage:hover
+{
+    color: grey;
+}
+
+figcaption
+{
+    color: grey;
+    font-family:"Fira Mono" ;
+    font-size: small;
+    text-align: center;
+}
+
+table
+{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+    padding: 10px;
+    position: relative;
+    align-items: center;
+}
+
+td
+{
+    height: 20px;
+    border-color: black;
+    border-style:hidden;
+    border-width: 2px;
+    text-align: left;
+    padding: 10px;
+}
+
+.tableGauche
+{
+    height: 20px;
+    border-color: black;
+    border-style:hidden;
+    border-width: 2px;
+    text-align: right;
+    padding: 10px;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------- ORDI -------------------------------- */
+
+@media screen and ( min-width:800px)
+{
+    /* --------------------- ARTICLE ----------------------- */
+
+    .texte
+    {
+        font-family: 'Fira Mono';
+        color: black ;
+        text-align: center;
+        margin: 50px;
+    }    
+    
+    /* ---------------- BARRE DE NAVIGATION ---------------- */
+
+.barrenav
+{
+    display: flex;
+    background-color:black;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+    padding-right: 20px;
+    height: 100px;
+}
+    
+.liensbarrenav
+{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+    
+.lien
+{
+    
+    font-family: 'Bayon';
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none; 
+    transition: 0.5s;
+}
+    
+a
+{
+    color: white;
+    text-decoration: none; 
+    transition: 0.5s;
+}
+    
+    .lien:hover
+{
+    color: white;
+    text-decoration: none;
+    filter: opacity(0.3)
+}
+
+    /* ---------------------- IMAGES ----------------------- */
+
+.logo
+{
+    width: 90px;
+    transition: 0.5s;
+}
+    
+.logo:hover
+{
+    color: white;
+    text-decoration: none;
+    filter: opacity(0.3)
+}
+.imageboutton
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-flow: row;
+    border-radius: 30px;
+    padding: 2%;
+    max-width: 800px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+    transition: 0.5s;
+}
+
+.imageboutton:hover
+{
+    filter: brightness(0.3);
+}
+
+.imagebouttoncolonne
+{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin : auto;
+    border-radius: 50px;
+    padding: 10px;
+    max-width: 800px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+    transition: 0.5s;
+}
+
+.imagebouttoncolonne:hover
+{
+    filter: brightness(0.3);
+}
+
+
+.menuligne
+{
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    padding: 30px;
+    width: 90%;
+}
+
+.menucolonne
+{
+    display: flex;
+    flex-flow: column;
+    margin-right: 0%;
+    align-items: center;
+}
+
+.imageportfolio
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-flow: row;
+    border-radius: 60px;
+    padding: 30px;
+    max-width: 800px;
+    transition: 0.5s;
+}
+
+.imageportfolio:hover
+{
+    filter:brightness(0.3);
+}
+
+.imagecover
+{
+    width: 30%;
+    display: flex;
+    margin: auto;
+    flex-flow: row;
+    border-radius: 30px;
+    padding: 10px;
+    max-width: 800px;
+    transition: 0.5s;
+}
+
+.imagecoverpetit
+{
+    width: 24%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-self: center;
+    flex-flow: row;
+    border-radius: 10%;
+    padding: 10px;
+    max-width: 800px;
+    transition: 0.5s;
+}
+
+.imageligne
+{
+    display: flex;
+    flex-flow: row;
+    margin: auto; 
+    width: 90%;
+}
+
+}
+
+.videoportfolio
+{
+    border-radius: 30px;
+}
+
+/* ------------------------------ TELEPHONE ----------------------------- */
+
+@media screen and ( max-width:800px)
+{
+    /* ---------------- BARRE DE NAVIGATION ---------------- */
+
+.barrenav
+{
+    display: flex;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+}
+
+.liensbarrenav
+{
+    display:flex ;
+    flex-direction: row;
+    text-align: center;
+    position: absolute;
+    top:40px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.lien
+{
+    font-family: Bayon;
+    text-align: center;
+    font-size: 1em;
+    padding:7px;
+    display: flex;
+    
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.lientitre
+{
+    color: black;
+    transition : 0.3s;
+    font-family: 'Bayon';  
+    text-align: center;
+    font-size: 1.2em;
+    padding-left: 30px;
+}
+
+
+.retourhautpage
+{
+    color: black;
+    transition : 0.3s;
+    font-family: 'Bayon';  
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+
+.retourhautpage:hover
+{
+    color: grey;
+}
+
+    /* ------------------ TEXTE / ARTICLE ------------------ */
+
+.grostitre
+{
+    font-family: 'Libre Barcode 39 Text';  
+    color: black ;
+    text-align: center;
+    font-size: 2.5em;
+}
+    
+.titre
+{
+    font-family: 'Bayon';  
+    color: black ;
+    text-align: center;
+    font-size: 1em;
+}
+
+article
+{
+    font-family: 'Fira Mono';
+    color: black ;
+    text-align: center;
+    font-size: 1em;
+    margin: 20px;
+}
+
+.lientexte
+{
+color: black;
+transition : 0.3s;
+text-decoration: underline;
+}
+
+/* ------------------------------ FORMULAIRE ---------------------------- */
+
+.formulaire
+{
+    color: black;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.formulaire:hover
+{
+    color:rgb(139, 139, 139);
+
+}
+
+label
+{
+    font-family: 'Bayon';
+    color: black ;
+    text-align: center;
+    font-size:medium;
+}
+
+::placeholder
+{
+    color: grey;
+    font-family: 'Fira Mono';
+    font-size: x-small;
+}
+
+input
+{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height:30px;
+    border-radius: 5px;
+    font-family: 'Fira Mono';
+    border: 0px;
+    font-size: x-small;
+    padding: 2px;
+}
+
+textarea
+{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 90px;
+    border-radius: 5px;
+    font-family: 'Fira Mono';
+    border: 0px;
+    font-size: x-small;
+    padding: 2px;
+}
+
+    /* ---------------------- IMAGES ----------------------- */
+
+.logo
+{
+    width: 50px;
+    position:relative;
+    top: -13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.image
+{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    border-radius: 50px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.imagepetite
+{
+    width: 75%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 800px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+}
+
+.imageboutton
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    border-radius: 30px;
+    padding: 2%;
+    max-width: 800px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+    transition: 0.5s;
+}
+
+.imagebouttoncolonne
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    border-radius: 30px;
+    padding: 2%;
+    max-width: 800px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+    transition: 0.5s;
+}
+
+.menuligne
+{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding-top: 3%;
+    width: 90%;
+}
+
+.menucolonne
+{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding-top: 3%; 
+}
+
+.imageportfolio
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    border-radius: 30px;
+    padding: 3%;
+    max-width: 800px;
+}
+
+.imageligne
+{
+    display: flex;
+    flex-flow: column;
+    margin: auto; 
+    
+}
+
+.imagecover
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-flow: row;
+    padding: 3%;
+    border-radius: 30px;
+    max-width: 800px;
+    transition: 0.5s;
+}
+
+.imagecoverpetit
+{
+    width: 97%;
+    display: flex;
+    margin: auto;
+    flex-flow: row;
+    border-radius: 30px;
+    padding: 3%;
+    max-width: 800px;
+    transition: 0.5s;
+}
+
+.videoportfolio
+{
+    border-radius: 30px;
+    width: 90%;
+}
+
+.icone
+{
+    width: 45px;
+    padding: 4px;
+    flex-direction: row;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+}
+
+figure
+{
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+figcaption
+{
+    color: grey;
+    font-family:"Fira Mono" ;
+    font-size: x-small;
+    text-align: center;
+}
+
+}
+

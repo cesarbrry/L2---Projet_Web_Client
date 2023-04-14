@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital DIstorsion</title>
+  <link rel="shortcut icon" href="../RESSOURCES/IMAGES/IconePage.png" />
+  <link rel="stylesheet" href="../CSS/Subscribe.css">
+  <script src="../JS/general.js"></script>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="barrenav affichemenu ">
+      <div><a href="../index.html"><img class="logo" src="../RESSOURCES/IMAGES/LogoHeader.png" alt="Logo"></a></div>
+      <menu class="liensbarrenav">
+        <li><a class="lien" href="../HTML/Portfolio.html"> PORTFOLIO</a></li>
+        <li><a class="lien" href="../HTML/About.html"> ABOUT</a></li>
+        <li><a class="lien" href="../HTML/Contact.html">CONTACT</a></li>
+        <li><a class="lien" href="../HTML/Subscribe.html">SUBSCRIBE</a></li>
+      </menu>
+    </nav>
+  </header>
+
+  <main class="contenu">
+
+    <br>
+    <br>
+
+    <h1 class="grostitre">
+      ABONNEMENT
+    </h1>
+
+    <br>
+    <br>
+
+    <div class="titre">
+      <form action="../htbin/register.py" method="post" autocomplete="off">
+        <label class="formulaire">NOM D'UTILISATEUR*</label><br><br>
+        <input id="username" name="username" type="text" required onkeyup="validerPseudo(this.value)" placeholder=" // Pseudonyme" /><br><br>
+        
+        <label class="formulaire">NOM*</label> <br><br>
+        <input id="lastname" name="lastname" type="text" required onkeyup="validerNom(this.value)" placeholder=" // Nom" /><br><br>
+        
+        <label class="formulaire">PRENOM*</label> <br><br>
+        <input id="firstname" name="firstname" type="text" required onkeyup="validerPrenom(this.value)" placeholder=" // Prénom" /><br><br>
+        
+        <label class="formulaire">DATE DE NAISSANCE</label> <br><br>
+        <input id="birthdate" name="birthdate" type="text" onkeyup="validernaiss(this.value)" placeholder=" // Format : JJ/MM/AAAA" /><br><br>
+        
+        <label class="formulaire">MAIL*</label><br><br>
+        <input id="useremail" name="useremail" type="text" required onkeyup="validerMail(this.value)" placeholder=" // Format : Email@exemple.com" /><br><br>
+        
+        <label class="formulaire">MOT DE PASSE*</label><br><br>
+        <input id="userpwd" name="userpwd" type="password" required onkeyup="validerMDP(this.value)" placeholder=" // &#183;&#183;&#183;&#183;&#183; " /><br><br>
+        
+        <button type="submit">S'ABONNER</button>
+      </form>
+    </div>
+
+    <br><br>
+
+    <article>
+      // Ne pas mettre d'accent dans les prénoms, noms ou pseudonymes // <br><br>
+      * Champs Obligatoires <br>
+    </article>
+
+    <br><br>
+
+    <a class="lientitre" href="../HTML/Connect.html"> &raquo; SE CONNECTER </a> <br><br>
+    <a class="lientitre" href="../index.html"> &raquo; RETOUR ACCEUIL </a> <br>
+
+  </main>
+
+</body>

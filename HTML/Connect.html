@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital DIstorsion</title>
+  <link rel="shortcut icon" href="../RESSOURCES/IMAGES/IconePage.png" />
+  <link rel="stylesheet" href="../CSS/Subscribe.css">
+  <script src="../JS/connexion.js"></script>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="barrenav affichemenu ">
+      <div><a href="../index.html"><img class="logo" src="../RESSOURCES/IMAGES/LogoHeader.png" alt="Logo"></a></div>
+      <menu class="liensbarrenav">
+        <li><a class="lien" href="../HTML/Portfolio.html"> PORTFOLIO</a></li>
+        <li><a class="lien" href="../HTML/About.html"> ABOUT</a></li>
+        <li><a class="lien" href="../HTML/Contact.html">CONTACT</a></li>
+        <li><a class="lien" href="../HTML/Subscribe.html">SUBSCRIBE</a></li>
+      </menu>
+    </nav>
+  </header>
+
+  <main class="contenu">
+
+    <br><br>
+
+    <h1 class="grostitre">
+      CONNECT
+    </h1>
+
+    <br><br><br>
+
+    <article class="titre"> 
+      <form action="../htbin/login.py" method="get" onsubmit="login()" autocomplete="off">
+        
+        <label class="formulaire">NOM D'UTILISATEUR*</label><br><br>
+        <input id="username" name="username" type="text" required onkeyup="verifUserName(this.value)" placeholder=" // Pseudonyme" /><br><br>
+
+        <label class="formulaire">MOT DE PASSE*</label><br><br>
+        <input id="userpwd" name="userpwd" type="password" required onkeyup="verifMDP(this.value)" placeholder=" // &#183;&#183;&#183;&#183;&#183; " />
+        
+        <br><br>
+        
+        <button type="submit">SE CONNECTER</button>
+      </form>
+    </article>
+
+    <br><br>
+
+    <article>
+      * Champs Obligatoires
+    </article>
+
+    <br><br>
+
+    <a class="lientitre" href="../HTML/Subscribe.html"> &raquo; PAS DE COMPTE </a> <br><br>
+    <a class="lientitre" href="../index.html"> &raquo; RETOUR ACCEUIL </a> <br>
+  
+  </main>
+
+</body>
